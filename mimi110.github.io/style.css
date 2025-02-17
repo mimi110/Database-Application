@@ -1,0 +1,295 @@
+* {
+  font-family: 'Roboto Mono', monospace;
+
+  
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+
+}
+
+
+/* Header */ 
+
+header {
+  top: 0; 
+}
+
+.logo-header {
+  position: relative; 
+}
+
+.logo {
+  position: absolute; 
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px; 
+  height: 80px; 
+  background-image: url('img/miffy.png'); 
+  background-size: cover; 
+  border-radius: 50%; 
+}
+
+
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
+
+.nav {
+   
+    font-weight: 600;
+    margin: 10px 10px;
+    padding: 13px 13px;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #a4abb8;
+    color: #333;
+    border-radius: 50px; 
+    font-size: 16px;
+    transition: background-color 0.3s;
+  
+}
+
+.nav:hover {
+    background-color: #a0a4ae;
+}
+
+
+
+
+/* Section */
+
+.box {
+  width: 500px; 
+  padding: 10px 0px 10px 0px;
+  margin-bottom: 50px;
+
+  }
+
+
+section {
+  min-height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+
+#about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0;
+      background: #f5f5f5;
+  }
+
+#project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 0px 80px 0px;
+    background: #f5f5f5;
+}
+
+#intro h1 {
+    color: #333;
+    font-size: 65px;
+    margin: 10px;
+}
+
+
+#intro h2 {
+    color: #333;
+    font-size: 25px;
+    margin: 10px;
+}
+
+
+#intro h2 span.cursor {
+    display: inline-block;
+    background-color: #333;
+    margin-left: 1.6px; 
+    width: 3px;
+    animation: blink 1s infinite;
+}
+
+
+#intro h2 span.cursor.typing {
+    animation: none;
+}
+
+
+@keyframes blink {
+    0%  { background-color: #333; }
+    49% { background-color: #333; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #333; }
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+
+}
+
+p {
+    font-size: 18px;
+}
+
+
+
+
+/* Footer */
+
+
+footer {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    text-align: center;
+}
+
+
+.footer {
+    border-top: 1px solid #333; 
+    padding: 20px 0;
+}
+
+
+
+
+/* Image */
+.about img {
+  width: 200px; 
+  height: 200px; 
+  border: 1px solid #000;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover; 
+  border-radius: 50%; 
+}
+
+
+.project img {
+  max-width: 500px;
+  max-height: 200px;
+  border: 1px solid #000;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.project img.enlarged {
+  transform: scale(2); 
+}
+
+
+/* Mobile */
+
+
+@media only screen and (max-width: 600px) {
+  body, html {
+    font-size: 14px; 
+  }
+
+  header {
+     top: 0; 
+  }
+
+  .logo-header {
+    position: relative;
+  }
+
+  .logo {
+    position: absolute; 
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px; 
+    height: 80px; 
+    background-size: cover; 
+    border-radius: 50%;
+  }
+
+  nav {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .nav {
+    margin: 10px;
+  }
+
+  .box {
+    width: 80%; 
+  }
+
+  #intro h1 {
+    font-size: 40px; 
+  }
+
+  #intro h2 {
+    font-size: 20px; 
+  }
+
+  .about img {
+    width: 200px; 
+    height: 200px; 
+    border: 1px solid #000;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .project img {
+    max-width: 100%; 
+    max-height: auto;
+  }
+
+  .project img.enlarged {
+    transform: scale(2); 
+  }
+
+  .footer {
+    padding: 10px 0;
+  }
+
+   
+      }
+  
